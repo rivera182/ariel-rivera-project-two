@@ -1,0 +1,18 @@
+/* ----------About Sophie Section--------------- */
+
+.about-sophie-sect {
+    background: $background-color-1;
+}
+
+.who-is-sophie-content {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 200px 0 0;
+}
+
+@media (max-width: 768px){
+    .who-is-sophie-content{
+        padding: 0;
+    }
+}

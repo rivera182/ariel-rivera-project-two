@@ -1,0 +1,23 @@
+/* --------Gallery--------- */
+.gallery-sect {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-img-container {
+    width: 32%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px){
+    .gallery-sect{
+        padding: 15px 0;
+        .wrapper{
+            width: 100%;
+        }
+    }
+}

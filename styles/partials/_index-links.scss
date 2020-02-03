@@ -1,0 +1,48 @@
+/* ----------Links-Section------------- */
+
+
+.info-links-sect {
+    background: $background-color-1;
+}
+
+.info-links-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    .info-links-quarter {
+        width: 50%;
+        display: flex;
+        .info-links-fab {
+            padding: 10px;
+            background: $title-color;
+            margin: 12px 10px auto 0px;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+.info-links-text {
+    padding: 20px 38px 20px 0;
+    h3 {
+        @include sub-heading;
+    }
+    p {
+        margin-bottom:0px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .info-links-content{
+        flex-direction: column;
+        align-items: flex-start;
+        .info-links-quarter{
+            width: 100%;
+            .info-links-text{
+                padding-right: 0;
+            }
+        }
+    }
+}

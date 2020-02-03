@@ -1,0 +1,186 @@
+/* ----------------Nav Bar-------------------- */
+
+nav {
+    width: 100%;
+    background: $title-color;
+}
+
+.nav-link-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.nav-link {
+    padding: 2px;
+    margin: 11px 10px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    font-weight: 800;
+    a {
+        transition: 0.5s;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.nav-sophie-logo {
+    font-family: $secondary-font;
+    font-size: 3rem;
+    margin: 0 15px;
+}
+.mobile-nav{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+/* ----------------Header-------------------- */
+
+.index-header {
+    background: $title-color;
+    height: 80vh;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.header-logo, .header-floated-image {
+    width: 50%;
+}
+
+.header-logo {
+    position: absolute;
+    top: 150px;
+    max-width: 490px;
+}
+
+.header-logo-container {
+	width: 100%;
+	display: flex;
+	position: relative;
+	h1 {
+		position: absolute;
+		top: 13px;
+		left: 50px;
+		font-size: 13rem;
+		font-family: $secondary-font;
+	}
+	img {
+		position: absolute;
+		max-width: 140px;
+	}
+}
+.header-floated-image {
+	position: absolute;
+	max-width: 450px;
+	top: 12px;
+	right: 15px;
+	img {
+		box-shadow: 15px 15px #fff;
+	}
+}
+
+
+
+
+
+// ------media queries ------
+
+@media (max-width: 1280px){
+    .header-logo-container{
+        z-index: 5;
+        h1{
+            top: 0;
+            position: relative;
+            font-size: 10.5rem;
+        }
+        img{
+            max-width: 105px;
+            left: 20px;
+            left: 17px;
+        }
+
+    }
+}
+
+@media (max-width: 1120px){
+    .header-logo-container{
+        h1{
+            font-size: 8.75rem;
+        }
+        img{
+            top: -10px;
+        }
+    }
+    .header-floated-image{
+        top: 80px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .index-header{
+        min-height: 80vh;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+    .nav-sophie-logo{
+        margin: 0;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+    .header-logo{
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+    .header-logo-container{
+        h1{
+            top: 0;
+            position: relative;
+            font-size: 10rem;
+        }
+        img{
+            max-width: 105px;
+            left: 20px;
+        }
+
+    }
+    .header-floated-image{
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        top: 55px;
+        img{
+            max-width: 350px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .header-logo-container{
+        h1{
+            font-size: 5rem;
+        }
+        img{
+            max-width: 75px;
+            top: -10px;
+            left: 15px;
+        }
+    }
+}

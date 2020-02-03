@@ -1,0 +1,39 @@
+//Colors ------------
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Lora', serif;
+
+//Fonts -------------
+$main-font-color: #2C2C2C;
+$title-color: #F6A823;
+$background-color-1: #F0EFED;
+$button-color: #30ccdd;
+$shadow-color-1: #A82706;
+$blog-accent-color: #285e64;
+
+
+// General Styles ---
+@mixin section-btn {
+    font-size: 1.5rem;
+    background-color: $button-color;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0;
+    transition: 0.2s;
+}
+
+@mixin section-btn-hover {
+    background: $title-color;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.56);
+ }
+
+@mixin sub-heading {
+    font-size: 2.2rem;
+    padding-top: 0px;
+}
+
+@mixin accent-blog-txt {
+    color: $blog-accent-color;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,115 @@
+/* ----------Blog Section--------------- */
+
+.blog-sect {
+    padding: 0;
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+.blog-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.blog-sub-container {
+    width: 100%;
+    display: flex;
+}
+
+.blog-text {
+    padding: 40px 0;
+}
+
+.blog-text-container1{
+    padding-left: 100px;
+    margin-top:60px;
+}
+
+.blog-text-container2 {
+    padding-right: 100px;
+    text-align: right;
+}
+
+.blog-image, .blog-text {
+    width: 50%;
+}
+
+.blog-img-container {
+    max-width: 600px;
+}
+
+.blog-image-1, .blog-image-2 {
+    position: relative;
+}
+
+.blog-img-container-1 {
+    position: absolute;
+    top: -26px;
+    right: 0;
+    box-shadow: 15px 15px 0px 0px $shadow-color-1, 
+                -105px 15px 0px 0px $shadow-color-1, 
+                -155px 15px 0px 0px $shadow-color-1, 
+                -185px 15px 0px 0px $shadow-color-1;
+}
+
+.blog-img-container-2 {
+    position: absolute;
+    bottom: -13px;
+    left: 0px;
+    box-shadow: 15px 15px 0px 0px $title-color, 
+                105px 15px 0px 0px $title-color, 
+                155px 15px 0px 0px $title-color, 
+                185px 15px 0px 0px $title-color;
+}
+
+.blog-link-btn {
+    margin-bottom: 23px;
+}
+
+// MEDIA QUERIES
+@media (max-width: 1120px){
+    .blog-container{
+        .blog-text-container1{
+            padding-left: 50px;
+        }
+        .blog-text-container2{
+            padding-right: 50px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .blog-container{
+        flex-direction: column;
+        .blog-image, .blog-text{
+            width: 100%;
+        }
+        .blog-img-container-1, .blog-img-container-2{
+            position: relative;
+        }
+        .blog-img-container-1{
+            left: 0;
+            order: 0;
+        }
+        .blog-text-container1{
+            margin-top: 0;
+            order: 1;
+            padding-left: 0;
+        }
+        .blog-image-2{
+            display: flex;
+            justify-content: flex-end;
+            order: 2;
+        }
+        .blog-text-2{
+            order: 3;
+            margin-top: 50px;
+        }
+        .blog-text-container2{
+            padding-right: 0;
+        }
+
+    }
+}
