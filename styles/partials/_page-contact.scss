@@ -1,3 +1,5 @@
+//contact section
+
 .contact-header {
 	width: 100%;
 	background-image: url(../sophie-assets/contact-image-1.jpg);
@@ -136,7 +138,8 @@ input[type=submit]:hover {
     opacity: 0;
 }
 
-// MEDIA QUERIES
+// media-queries
+
 @media (max-width: 1080px){
     .links-address-container{
         width: 33.33%
@@ -147,6 +150,9 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 768px){
+    .contact-header {
+        height: 30vh;
+    }
     .getin-touch-container{
         flex-direction: column;
         .links-address-container{

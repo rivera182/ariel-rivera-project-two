@@ -172,7 +172,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  /* font-weight: ; */
   font-size: 1.8rem;
 }
 
@@ -240,7 +239,6 @@ img {
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.56);
 }
 
-/* ----------------Nav Bar-------------------- */
 nav {
   width: 100%;
   background: #F6A823;
@@ -280,6 +278,7 @@ nav {
   font-family: "Lora", serif;
   font-size: 3rem;
   margin: 0 15px;
+  text-transform: uppercase;
 }
 
 .mobile-nav {
@@ -290,10 +289,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 3rem;
   padding: 25px 0;
 }
 
-/* ----------------Header-------------------- */
 .index-header {
   background: #F6A823;
   height: 80vh;
@@ -374,7 +373,7 @@ nav {
     top: -10px;
   }
   .header-floated-image {
-    top: 80px;
+    top: 40px;
   }
 }
 
@@ -419,14 +418,26 @@ nav {
     width: 100%;
     max-width: 100%;
     top: 55px;
+    right: 0px;
   }
   .header-floated-image img {
-    max-width: 350px;
+    max-width: 300px;
     margin: 0 auto;
   }
 }
 
+@media (max-width: 700px) {
+  .header-logo {
+    top: 30px;
+    right: 40px;
+  }
+}
+
 @media (max-width: 480px) {
+  .header-logo {
+    top: 20px;
+    right: -33px;
+  }
   .header-logo-container h1 {
     font-size: 5rem;
   }
@@ -437,7 +448,6 @@ nav {
   }
 }
 
-/* ----------About Sophie Section--------------- */
 .about-sophie-sect {
   background: #F0EFED;
 }
@@ -455,7 +465,6 @@ nav {
   }
 }
 
-/* ----------Blog Section--------------- */
 .blog-sect {
   padding: 0;
 }
@@ -584,7 +593,6 @@ nav {
   }
 }
 
-/* ----------Links-Section------------- */
 .info-links-sect {
   background: #F0EFED;
 }
@@ -644,7 +652,6 @@ nav {
   }
 }
 
-/* --------Sophie's Journey Section--------- */
 .journey-sect {
   background: #F0EFED;
 }
@@ -713,7 +720,6 @@ nav {
   }
 }
 
-/* --------Gallery--------- */
 .gallery-sect {
   width: 100%;
 }
@@ -775,7 +781,6 @@ footer p {
   font-size: 6rem;
 }
 
-/* ---------------BLOG-top half boxes------------------ */
 .blog-section-wrapper {
   width: 80%;
   display: -webkit-box;
@@ -888,7 +893,6 @@ footer p {
   border-bottom: 4px solid #F6A823;
 }
 
-/* delete this section */
 .become-blogger-container, .blog-comment {
   margin-bottom: 40px;
 }
@@ -956,6 +960,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .blog-header {
+    height: 30vh;
+  }
   .blog-section-wrapper .blog-left-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1159,6 +1166,9 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 768px) {
+  .contact-header {
+    height: 30vh;
+  }
   .getin-touch-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

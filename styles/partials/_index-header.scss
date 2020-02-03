@@ -1,4 +1,4 @@
-/* ----------------Nav Bar-------------------- */
+//Nav Bar
 
 nav {
     width: 100%;
@@ -32,14 +32,17 @@ nav {
     font-family: $secondary-font;
     font-size: 3rem;
     margin: 0 15px;
+    text-transform: uppercase;
 }
 .mobile-nav{
     display: none;
     justify-content: space-between;
     align-items: center;
+    font-size: 3rem;
     padding: 25px 0;
 }
-/* ----------------Header-------------------- */
+
+//Header
 
 .index-header {
     background: $title-color;
@@ -88,11 +91,7 @@ nav {
 	}
 }
 
-
-
-
-
-// ------media queries ------
+// media-queries
 
 @media (max-width: 1280px){
     .header-logo-container{
@@ -121,10 +120,9 @@ nav {
         }
     }
     .header-floated-image{
-        top: 80px;
+        top: 40px;
     }
 }
-
 
 @media (max-width: 768px){
     .index-header{
@@ -165,14 +163,26 @@ nav {
         width: 100%;
         max-width: 100%;
         top: 55px;
+        right:0px;
         img{
-            max-width: 350px;
+            max-width: 300px;
             margin: 0 auto;
         }
     }
 }
 
+@media (max-width: 700px){
+    .header-logo {
+        top: 30px;
+        right:40px
+    }
+}
+
 @media (max-width: 480px){
+    .header-logo {
+        top: 20px;
+        right:-33px
+    }
     .header-logo-container{
         h1{
             font-size: 5rem;

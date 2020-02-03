@@ -1,5 +1,4 @@
-/* ----------Links-Section------------- */
-
+//Links-Section
 
 .info-links-sect {
     background: $background-color-1;
@@ -22,7 +21,6 @@
     }
 }
 
-
 .info-links-text {
     padding: 20px 38px 20px 0;
     h3 {
@@ -33,6 +31,7 @@
     }
 }
 
+//media-queries
 
 @media (max-width: 768px){
     .info-links-content{
